@@ -251,6 +251,29 @@ ul { list-style: none; }
 .resultados__segments { margin-top: 40px; text-align: center; color: var(--text-mut); font-size: 1.05rem; max-width: 780px; margin-inline: auto; }
 .resultados__segments strong { color: var(--text); }
 
+/* ---- outros cases (lista compacta) ---- */
+.outros-cases { margin-top: 56px; padding-top: 40px; border-top: 1px solid rgba(244,241,234,.09); }
+.outros-cases__title {
+  font-family: var(--font-head); font-weight: 600; font-size: 1.15rem;
+  letter-spacing: -0.01em; margin-bottom: 24px; color: var(--text-mut);
+}
+.outros-cases__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+}
+.outros-cases__item {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 10px; padding: 14px 18px; border-radius: 12px;
+  border: 1px solid rgba(244,241,234,.08); background: rgba(244,241,234,.02);
+  transition: border-color .3s var(--ease), background .3s var(--ease);
+}
+.outros-cases__item:hover { border-color: rgba(217,80,47,.4); background: rgba(217,80,47,.04); }
+.outros-cases__name { font-family: var(--font-head); font-weight: 500; font-size: 0.95rem; color: var(--text); }
+.outros-cases__badge {
+  font-family: var(--font-head); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em;
+  color: var(--terracotta); background: rgba(217,80,47,.1); padding: 4px 10px; border-radius: 100px;
+  white-space: nowrap;
+}
+
 /* ===================== PROCESSO ===================== */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
 .step {
@@ -306,6 +329,7 @@ ul { list-style: none; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .bento { grid-template-columns: repeat(2, 1fr); }
   .case--lg { grid-column: span 2; }
+  .outros-cases__grid { grid-template-columns: repeat(2, 1fr); }
   .grid-2 { grid-template-columns: 1fr; gap: 40px; }
   .sobre__left { order: -1; }
 }
@@ -326,7 +350,7 @@ ul { list-style: none; }
   .hero__cta .btn, .cta__actions .btn { flex: 1 1 100%; }
 }
 @media (max-width: 560px) {
-  .cards, .steps, .metrics, .bento { grid-template-columns: 1fr; }
+  .cards, .steps, .metrics, .bento, .outros-cases__grid { grid-template-columns: 1fr; }
   .case--lg { grid-column: span 1; }
   .footer__contact { align-items: flex-start; }
 }
