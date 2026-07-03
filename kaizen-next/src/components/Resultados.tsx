@@ -1,6 +1,6 @@
 import Reveal from "./ui/Reveal";
 import Counter from "./ui/Counter";
-import { METRICS, CASES } from "@/lib/site";
+import { METRICS, CASES, OTHER_CASES } from "@/lib/site";
 
 export default function Resultados() {
   return (
@@ -77,6 +77,26 @@ export default function Resultados() {
             </Reveal>
           ))}
         </div>
+
+        {/* outros cases — lista compacta */}
+        <Reveal className="mt-14 border-t border-sand/10 pt-10">
+          <h3 className="mb-6 font-head text-[1.15rem] font-semibold tracking-[-0.01em] text-sand/70">
+            Outros cases
+          </h3>
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {OTHER_CASES.map((o) => (
+              <li
+                key={o.title}
+                className="flex flex-wrap items-center justify-between gap-2.5 rounded-xl border border-sand/10 bg-sand/[0.02] px-[18px] py-3.5 transition-colors duration-300 hover:border-terra/40 hover:bg-terra/5"
+              >
+                <span className="font-head text-[0.95rem] font-medium text-sand">{o.title}</span>
+                <span className="whitespace-nowrap rounded-full bg-terra/10 px-2.5 py-1 font-head text-[0.72rem] font-semibold tracking-[0.04em] text-terra">
+                  {o.badge}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
 
         <Reveal as="p" className="mx-auto mt-10 max-w-[780px] text-center text-[1.05rem] text-sand/70">
           Já atendemos{" "}

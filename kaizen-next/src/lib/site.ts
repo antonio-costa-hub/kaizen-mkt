@@ -62,43 +62,62 @@ export type CaseItem = {
 
 export const CASES: CaseItem[] = [
   {
-    badge: "Estratégia completa",
+    badge: "Gestão 360º",
     title: "Puca Coast",
-    desc: 'Marca de streetwear costeira. Construímos personas, pilares de conteúdo e a campanha narrativa "Do Manifesto ao Palco", com ativação de micro-influenciador, dashboard financeiro e rastreamento completo (Meta Pixel, CAPI, GTM e GA4).',
-    meta: ["Branding & conteúdo", "Rastreamento avançado", "Dashboard financeiro"],
+    desc: 'Marca de streetwear costeira. Assumimos o projeto de ponta a ponta: captação e edição de conteúdo, estratégia digital, gestão completa de redes sociais e criação do site — com a campanha narrativa "Do Manifesto ao Palco", rastreamento avançado (Meta Pixel, CAPI, GTM, GA4) e dashboard financeiro com análise de estoque.',
+    meta: ["Conteúdo & redes", "Site", "Rastreamento avançado"],
     large: true,
+  },
+  {
+    badge: "Fitness",
+    title: "Carol Amaro Personal",
+    desc: "Personal trainer com base orgânica sólida, mas com teto de crescimento. Estruturamos campanhas e reposicionamento de vendas que tiraram o faturamento de R$25-30k orgânicos para R$40k sólidos todos os meses — somente com tráfego pago.",
+    meta: ["+70% de faturamento", "Posicionamento de vendas"],
+  },
+  {
+    badge: "Gastronomia",
+    title: "Restaurante Gambaro",
+    desc: "Precisava de dois públicos ao mesmo tempo: movimento no salão e pedidos no iFood. Criamos campanhas específicas para cada canal e, em apenas 2 meses, o restaurante bateu seu recorde histórico de faturamento.",
+    meta: ["Recorde de faturamento", "Salão + iFood"],
   },
   {
     badge: "Saúde",
     title: "Dr. Vinicius Scherner Rossi",
-    desc: "Neurologista. Gestão de Google Ads + criação de landing page e site institucional para captar pacientes com previsibilidade.",
-    meta: ["Google Ads", "Site + LP"],
+    desc: "Neurologista com reputação sólida, mas invisível no digital. Criamos landing page profissional com rastreamento completo de ponta a ponta — hoje ele sabe exatamente de onde vêm seus pacientes e o retorno real de cada campanha.",
+    meta: ["Landing page", "Rastreamento completo"],
   },
   {
-    badge: "Imobiliário",
-    title: "Fernanda N. de Queiroz",
-    desc: "Corretora de imóveis. Pacote completo de gestão de Meta + Google Ads para gerar leads qualificados de forma constante.",
-    meta: ["Meta Ads", "Google Ads"],
+    badge: "Design de produto",
+    title: "Scupp",
+    desc: "Startup de vitrine de eventos, reunindo o que acontece na cidade em um só lugar. Assumimos o design do site, traduzindo o conceito da startup em uma experiência visual pronta para validar e escalar no mercado.",
+    meta: ["Design de site", "Startup"],
   },
   {
-    badge: "Auditoria",
-    title: "Reserva Byom",
-    desc: "Auditoria de Facebook Ads e reestruturação de campanhas com Advantage+ e públicos Lookalike para escalar com eficiência.",
-    meta: ["Advantage+", "Lookalike"],
-  },
-  {
-    badge: "Alto padrão",
-    title: "Imóvel em Alphaville, Salvador",
-    desc: "Estratégia de geolocalização e segmentação de público para Meta Ads, focada em atrair compradores certos para um imóvel de alto padrão.",
-    meta: ["Geolocalização", "Meta Ads"],
-  },
-  {
-    badge: "Inteligência de mercado",
-    title: "Prospecção Vilas do Atlântico",
-    desc: "Dashboard mapeando 42 negócios locais em 10 nichos — inteligência de mercado para decidir onde e como crescer.",
-    meta: ["42 negócios", "10 nichos"],
+    badge: "Branding",
+    title: "Kahuna",
+    desc: "A marca já era forte na cabeça do proprietário, mas nada estava de fato definido — deixando-a solta e sem uniformidade. Entramos entendendo a essência da marca e transformamos isso em conceitos definidos e congruentes.",
+    meta: ["Identidade de marca", "Reconhecimento"],
     accent: true,
   },
+];
+
+export type OtherCase = { title: string; badge: string };
+
+export const OTHER_CASES: OtherCase[] = [
+  { title: "Fernanda N. de Queiroz", badge: "Imobiliário" },
+  { title: "Reserva Byom", badge: "Auditoria Meta Ads" },
+  { title: "Imóvel em Alphaville, Salvador", badge: "Alto padrão" },
+  { title: "Prospecção Vilas do Atlântico", badge: "Inteligência de mercado" },
+  { title: "Restaurante Casa Allepo", badge: "Gastronomia" },
+  { title: "Clínica Viver CTI", badge: "Saúde" },
+  { title: "Dra. Luciana Lavigne", badge: "Saúde" },
+  { title: "Agência Alcateia", badge: "Marketing" },
+  { title: "ITC — Assistente Virtual AVA", badge: "Tecnologia" },
+  { title: "Monges do Funk", badge: "Entretenimento" },
+  { title: "Arise", badge: "Tráfego direto" },
+  { title: "AV — Anestesia Veterinária", badge: "SaaS/Pet" },
+  { title: "Instituto Humanitas", badge: "Educação/Workshop" },
+  { title: "Veritus Consulting", badge: "Consultoria" },
 ];
 
 export const STEPS = [
