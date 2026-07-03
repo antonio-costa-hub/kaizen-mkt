@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaizen — Pequenos ajustes, grandes resultados</title>
+  <meta name="description" content="Agência de marketing digital para negócios locais: tráfego pago, sites, conteúdo e automação. Mais clientes todo mês, sem precisar de vários fornecedores." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kaizen — Marketing que traz clientes para o seu negócio" />
+  <meta property="og:description" content="Tráfego pago, sites, conteúdo e automação em um só lugar. Pequenos ajustes, grandes resultados." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="brand" aria-label="Kaizen — início">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <circle cx="20" cy="20" r="16" fill="none" stroke="var(--sand)" stroke-width="1.4" opacity="0.25"/>
+            <path d="M6 24 A14 14 0 0 1 34 24" fill="none" stroke="var(--terracotta)" stroke-width="2.6" stroke-linecap="round"/>
+            <circle cx="20" cy="24" r="4.5" fill="var(--terracotta)"/>
+          </svg>
+        </span>
+        <span class="brand__word">Kaizen</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#processo">Como trabalhamos</a>
+        <a href="#contato" class="btn btn--sm btn--accent">Solicitar proposta</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <!-- Animated rising sun -->
+    <div class="hero__sun" aria-hidden="true">
+      <svg viewBox="0 0 600 600" class="sun-svg">
+        <defs>
+          <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#D9502F" stop-opacity="0.35"/>
+            <stop offset="60%" stop-color="#D9502F" stop-opacity="0.10"/>
+            <stop offset="100%" stop-color="#D9502F" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle class="sun-halo" cx="300" cy="300" r="230" fill="url(#sunGrad)"/>
+        <circle class="sun-ring sun-ring--3" cx="300" cy="300" r="210" fill="none" stroke="#D9502F" stroke-width="1" opacity="0.18"/>
+        <circle class="sun-ring sun-ring--2" cx="300" cy="300" r="160" fill="none" stroke="#D9502F" stroke-width="1.2" opacity="0.3"/>
+        <circle class="sun-ring sun-ring--1" cx="300" cy="300" r="112" fill="none" stroke="#D9502F" stroke-width="1.5" opacity="0.5"/>
+        <circle class="sun-core" cx="300" cy="300" r="86" fill="#D9502F"/>
+      </svg>
+    </div>
+
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal" data-reveal>改善 · melhoria contínua</p>
+      <h1 class="hero__title reveal" data-reveal>
+        Mais clientes para o seu negócio local,<br class="hide-mobile" />
+        <span class="accent">todo mês.</span>
+      </h1>
+      <p class="hero__sub reveal" data-reveal>
+        Tráfego pago, sites, conteúdo e automação em um só lugar. A gente cuida do marketing
+        de ponta a ponta enquanto você cuida do que faz de melhor — atender bem quem chega.
+      </p>
+      <div class="hero__cta reveal" data-reveal>
+        <a href="https://wa.me/5571994016664?text=Ol%C3%A1!%20Quero%20uma%20proposta%20da%20Kaizen%20para%20o%20meu%20neg%C3%B3cio."
+           target="_blank" rel="noopener" class="btn btn--accent btn--lg">
+          Fale com a gente no WhatsApp
+        </a>
+        <a href="#resultados" class="btn btn--ghost btn--lg">Ver resultados reais</a>
+      </div>
+      <p class="hero__tagline reveal" data-reveal>Pequenos ajustes, grandes resultados.</p>
+    </div>
+
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="sobre section" id="sobre">
+    <div class="container grid-2">
+      <div class="sobre__left reveal" data-reveal>
+        <span class="kanji">改善</span>
+      </div>
+      <div class="sobre__right">
+        <p class="section__eyebrow reveal" data-reveal>Sobre a Kaizen</p>
+        <h2 class="section__title reveal" data-reveal>
+          Kaizen significa <span class="accent">melhoria contínua</span>. É assim que a gente
+          faz o seu negócio crescer.
+        </h2>
+        <p class="section__text reveal" data-reveal>
+          A palavra vem do japonês (改善) e resume nossa forma de trabalhar: não existe fórmula
+          mágica, existe ajuste constante. Testamos, medimos e melhoramos — semana após semana —
+          até o seu marketing virar uma máquina previsível de novos clientes.
+        </p>
+        <p class="section__text reveal" data-reveal>
+          Você não precisa contratar uma agência para os anúncios, um freelancer para o site,
+          outro para o conteúdo e mais um para os relatórios. <strong>A Kaizen é a sua equipe
+          de marketing completa</strong> — um só time, uma só estratégia, um só responsável pelo
+          resultado.
+        </p>
+        <ul class="sobre__list reveal" data-reveal>
+          <li>Sem depender de vários fornecedores desalinhados</li>
+          <li>Estratégia pensada para negócio local, não para grande marca</li>
+          <li>Relatórios claros: você sabe exatamente para onde vai cada real</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="servicos section section--sand" id="servicos">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal" data-reveal>O que fazemos</p>
+        <h2 class="section__title reveal" data-reveal>
+          Tudo que o seu negócio precisa para vender mais — sob o mesmo teto.
+        </h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M24 24 L24 8 M24 24 L37 31" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="card__title">Tráfego pago</h3>
+          <p class="card__text">
+            Campanhas no Meta Ads e Google Ads que colocam sua oferta na frente de quem já está
+            procurando por você. Verba otimizada todo dia para custar menos e vender mais.
+          </p>
+          <span class="card__tag">Meta · Google · TikTok</span>
+        </article>
+
+        <article class="card reveal" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="28" rx="3" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 18 H40 M14 14 h0.01 M18 14 h0.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="card__title">Sites e landing pages</h3>
+          <p class="card__text">
+            Páginas rápidas, bonitas e feitas para converter visitante em contato. Do site
+            institucional à landing de campanha, pronta para receber os anúncios.
+          </p>
+          <span class="card__tag">Sites · LPs · SEO base</span>
+        </article>
+
+        <article class="card reveal" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M20 17 L33 24 L20 31 Z" fill="currentColor"/></svg>
+          </div>
+          <h3 class="card__title">Conteúdo visual</h3>
+          <p class="card__text">
+            Foto e vídeo que fazem sua marca parecer do tamanho que ela merece. Conteúdo que
+            gera desejo, constrói autoridade e alimenta seus anúncios e redes.
+          </p>
+          <span class="card__tag">Foto · Vídeo · Social</span>
+        </article>
+
+        <article class="card reveal" data-reveal>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M14 10 h14 l6 6 v22 h-20 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M18 26 l4 4 l8 -9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="card__title">Automação</h3>
+          <p class="card__text">
+            Atendimento que responde na hora, follow-up que não deixa lead esfriar e relatórios
+            automáticos. Menos trabalho manual, mais vendas fechadas.
+          </p>
+          <span class="card__tag">Atendimento · CRM · Relatórios</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTADOS / PORTFÓLIO ===================== -->
+  <section class="resultados section" id="resultados">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal" data-reveal>Resultados & clientes</p>
+        <h2 class="section__title reveal" data-reveal>
+          Marcas que confiaram na Kaizen — e no que a gente entrega.
+        </h2>
+      </div>
+
+      <!-- Metrics band -->
+      <div class="metrics reveal" data-reveal>
+        <div class="metric">
+          <span class="metric__num" data-count="100" data-prefix="R$ " data-suffix="mil+">R$ 0</span>
+          <span class="metric__label">em verba de anúncios gerenciada</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num" data-count="1.5" data-decimals="1" data-suffix=" ano+">0</span>
+          <span class="metric__label">de experiência em tráfego pago</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num" data-count="5" data-suffix=" plataformas">0</span>
+          <span class="metric__label">Meta, Google, TikTok, YouTube, Pinterest</span>
+        </div>
+        <div class="metric">
+          <span class="metric__num" data-count="2" data-suffix=" países">0</span>
+          <span class="metric__label">clientes no Brasil e em Portugal</span>
+        </div>
+      </div>
+
+      <!-- Bento grid of cases -->
+      <div class="bento">
+        <article class="case case--lg reveal" data-reveal>
+          <span class="case__badge">Estratégia completa</span>
+          <h3 class="case__title">Puca Coast</h3>
+          <p class="case__desc">
+            Marca de streetwear costeira. Construímos personas, pilares de conteúdo e a campanha
+            narrativa <em>"Do Manifesto ao Palco"</em>, com ativação de micro-influenciador,
+            dashboard financeiro e rastreamento completo (Meta Pixel, CAPI, GTM e GA4).
+          </p>
+          <ul class="case__meta">
+            <li>Branding &amp; conteúdo</li><li>Rastreamento avançado</li><li>Dashboard financeiro</li>
+          </ul>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <span class="case__badge">Saúde</span>
+          <h3 class="case__title">Dr. Vinicius Scherner Rossi</h3>
+          <p class="case__desc">
+            Neurologista. Gestão de Google Ads + criação de landing page e site institucional
+            para captar pacientes com previsibilidade.
+          </p>
+          <ul class="case__meta"><li>Google Ads</li><li>Site + LP</li></ul>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <span class="case__badge">Imobiliário</span>
+          <h3 class="case__title">Fernanda N. de Queiroz</h3>
+          <p class="case__desc">
+            Corretora de imóveis. Pacote completo de gestão de Meta + Google Ads para gerar
+            leads qualificados de forma constante.
+          </p>
+          <ul class="case__meta"><li>Meta Ads</li><li>Google Ads</li></ul>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <span class="case__badge">Auditoria</span>
+          <h3 class="case__title">Reserva Byom</h3>
+          <p class="case__desc">
+            Auditoria de Facebook Ads e reestruturação de campanhas com Advantage+ e públicos
+            Lookalike para escalar com eficiência.
+          </p>
+          <ul class="case__meta"><li>Advantage+</li><li>Lookalike</li></ul>
+        </article>
+
+        <article class="case reveal" data-reveal>
+          <span class="case__badge">Alto padrão</span>
+          <h3 class="case__title">Imóvel em Alphaville, Salvador</h3>
+          <p class="case__desc">
+            Estratégia de geolocalização e segmentação de público para Meta Ads, focada em atrair
+            compradores certos para um imóvel de alto padrão.
+          </p>
+          <ul class="case__meta"><li>Geolocalização</li><li>Meta Ads</li></ul>
+        </article>
+
+        <article class="case case--accent reveal" data-reveal>
+          <span class="case__badge case__badge--light">Inteligência de mercado</span>
+          <h3 class="case__title">Prospecção Vilas do Atlântico</h3>
+          <p class="case__desc">
+            Dashboard mapeando <strong>42 negócios locais</strong> em 10 nichos — inteligência de
+            mercado para decidir onde e como crescer.
+          </p>
+          <ul class="case__meta"><li>42 negócios</li><li>10 nichos</li></ul>
+        </article>
+      </div>
+
+      <p class="resultados__segments reveal" data-reveal>
+        Já atendemos <strong>gastronomia, moda e e-commerce, arquitetura, saúde, imobiliário,
+        cursos online e fitness</strong> — no Brasil e em Portugal.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESSO ===================== -->
+  <section class="processo section section--dark" id="processo">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow reveal" data-reveal>Como trabalhamos</p>
+        <h2 class="section__title reveal" data-reveal>
+          Um método de ajuste contínuo — não uma aposta de sorte.
+        </h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal" data-reveal>
+          <span class="step__num">01</span>
+          <h3 class="step__title">Diagnóstico</h3>
+          <p class="step__text">
+            Entendemos seu negócio, seu público e seus números atuais. Antes de gastar um real
+            em anúncio, a gente sabe onde está a oportunidade.
+          </p>
+        </div>
+        <div class="step reveal" data-reveal>
+          <span class="step__num">02</span>
+          <h3 class="step__title">Estratégia</h3>
+          <p class="step__text">
+            Montamos o plano: canais, ofertas, mensagens e metas. Você aprova sabendo
+            exatamente o que vai acontecer e o que esperar.
+          </p>
+        </div>
+        <div class="step reveal" data-reveal>
+          <span class="step__num">03</span>
+          <h3 class="step__title">Execução</h3>
+          <p class="step__text">
+            Colocamos tudo no ar — anúncios, páginas, conteúdo e automações — com rastreamento
+            completo para medir cada resultado.
+          </p>
+        </div>
+        <div class="step reveal" data-reveal>
+          <span class="step__num">04</span>
+          <h3 class="step__title">Otimização contínua</h3>
+          <p class="step__text">
+            É aqui que mora o Kaizen: ajustamos toda semana com base nos dados. O que funciona
+            escala, o que não funciona sai. Sempre melhor que o mês anterior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta section" id="contato">
+    <div class="cta__glow" aria-hidden="true"></div>
+    <div class="container cta__inner reveal" data-reveal>
+      <p class="section__eyebrow">Vamos começar</p>
+      <h2 class="cta__title">
+        Seu concorrente já está anunciando.<br/>
+        <span class="accent">Que tal sair na frente?</span>
+      </h2>
+      <p class="cta__text">
+        Fale com a gente hoje e receba um diagnóstico gratuito do seu marketing. Sem compromisso,
+        sem enrolação — só uma conversa honesta sobre como trazer mais clientes para o seu negócio.
+      </p>
+      <div class="cta__actions">
+        <a href="https://wa.me/5571994016664?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20diagn%C3%B3stico%20gratuito%20da%20Kaizen."
+           target="_blank" rel="noopener" class="btn btn--accent btn--lg">
+          Quero meu diagnóstico gratuito
+        </a>
+        <a href="tel:+5571994016664" class="btn btn--ghost btn--lg">(71) 99401-6664</a>
+      </div>
+      <p class="cta__reassure">Resposta no mesmo dia · Atendimento direto com quem faz</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="30" height="30">
+              <circle cx="20" cy="20" r="16" fill="none" stroke="var(--sand)" stroke-width="1.4" opacity="0.25"/>
+              <path d="M6 24 A14 14 0 0 1 34 24" fill="none" stroke="var(--terracotta)" stroke-width="2.6" stroke-linecap="round"/>
+              <circle cx="20" cy="24" r="4.5" fill="var(--terracotta)"/>
+            </svg>
+          </span>
+          <span class="brand__word">Kaizen</span>
+        </a>
+        <p class="footer__tag">Evolução contínua para o seu negócio.</p>
+      </div>
+
+      <div class="footer__contact">
+        <a href="https://wa.me/5571994016664" target="_blank" rel="noopener">WhatsApp · (71) 99401-6664</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Kaizen. Todos os direitos reservados.</span>
+      <span>Pequenos ajustes, grandes resultados.</span>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5571994016664?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20Kaizen."
+     class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+      <path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.6 1.4h.1c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-4.9 1 1-4.8-.3-.5c-.9-1.5-1.4-3.2-1.4-5C5.2 9.1 10 4.3 16 4.3S26.8 9.1 26.8 15 22 24.8 16 24.8zm6-8.1c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.2 3.4 5.4 4.8.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

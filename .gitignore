@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+kaizen-next/node_modules/
+
+# next.js build output
+kaizen-next/.next/
+kaizen-next/out/
+kaizen-next/build/
+*.tsbuildinfo
+next-env.d.ts
+
+# env files
+.env*
+
+# editor / tooling
+.claude/
+.vercel
+.DS_Store
+Thumbs.db
+
+# logs
+*-debug.log*
+npm-debug.log*
