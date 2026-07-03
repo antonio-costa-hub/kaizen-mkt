@@ -29,10 +29,10 @@ const paths: Record<string, React.ReactNode> = {
       <path d="M20 17 L33 24 L20 31 Z" fill="currentColor" />
     </>
   ),
-  automation: (
+  design: (
     <>
-      <path d="M14 10 h14 l6 6 v22 h-20 Z" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round" />
-      <path d="M18 26 l4 4 l8 -9" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="19" cy="25" r="11" fill="none" stroke="currentColor" strokeWidth="2.2" />
+      <rect x="22" y="12" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" />
     </>
   ),
 };

@@ -37,10 +37,10 @@ export const SERVICES = [
     icon: "content",
   },
   {
-    title: "Automação",
-    text: "Atendimento que responde na hora, follow-up que não deixa lead esfriar e relatórios automáticos. Menos trabalho manual, mais vendas fechadas.",
-    tag: "Atendimento · CRM · Relatórios",
-    icon: "automation",
+    title: "Design e identidade visual",
+    text: "Logotipo, identidade visual e materiais que fazem sua marca parecer profissional e ser lembrada. Uma imagem consistente que passa confiança em cada ponto de contato.",
+    tag: "Branding · Logo · Social",
+    icon: "design",
   },
 ] as const;
 
